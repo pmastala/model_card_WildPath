@@ -270,7 +270,7 @@ consequential limitation (conflating data absence with low risk) is
 not a neutral technical imperfection. It systematically assigns
 artificially safe scores to regions where public health infrastructure
 is weakest, which are disproportionately low- and middle-income
-countries. Wealthy international travelers receive false reassurance. If
+countries. Travelers receive false reassurance. If
 those travelers arrive unvaccinated and become infected, the burden
 falls on local health systems that are already under-resourced: they
 consume clinical care, contribute to local transmission chains, and
@@ -292,17 +292,7 @@ unappealable by those most affected.
 
 **Informed consent for participatory health surveillance:** The app
 collects symptom reports from 12,000+ users who are, in effect,
-contributing to a commercial health surveillance system. Key questions
-that should be answered in the app's terms and data policy, and are not
-addressed in the scenario: Are users explicitly informed that their
-symptom data contributes to the risk model? What personal data is
-retained alongside symptom reports (GPS location, device ID, travel
-itinerary)? For how long is this data stored, and can users request
-deletion? Post-travel symptom monitoring in the premium tier is
-particularly sensitive — a user flagged as symptomatic post-travel from
-a high-risk zone may have a reportable condition, and it is unclear
-whether WildPath has any obligation or mechanism to notify public health
-authorities.
+contributing to a commercial health surveillance system. The user is provided with Terms and Conditions which stipulate the data to be collected. The user only participates when they agree to these.
 
 **Data sovereignty and extractive data practices:** Wildlife
 biodiversity records, outbreak data, and environmental datasets from
@@ -334,11 +324,7 @@ acting on vaccine or drug recommendations.
 guidance bear the health consequences. The ecotourism-dependent
 communities affected by overcautious or undercautious designations bear
 the economic and epidemiological consequences. WildPath's developers and
-investors bear neither. This asymmetry is not unique to WildPath — it
-characterizes much of consumer health AI — but it should be named
-explicitly and should inform how the system communicates uncertainty.
-When the model is operating on thin data, users should be told so, in
-plain language, at the point of decision.
+investors bear neither.
 
 ------------------------------------------------------------------------
 
@@ -347,25 +333,10 @@ plain language, at the point of decision.
 **Surveillance bias (most critical):** Absence of documented outbreaks
 does not mean absence of risk. A "Low" designation in a region with no
 surveillance infrastructure reflects the limits of the data, not the
-limits of the hazard. This is the single most important limitation and
-must be communicated to users at the point of consumption — in the
-interface, at the moment they view a risk tier — not only in a
-terms-of-service document no one reads. Suggested language for the app:
-*"This region has limited historical disease monitoring data. A Low
-rating here means we have fewer reports, not necessarily that the risk
-is lower than comparable destinations."*
+limits of the hazard.
 
-**Weekly update cycle and acute event blindness:** A confirmed Marburg
-cluster in a wildlife corridor, a newly identified bat coronavirus
-spillover at a cave tourism site, or a Lassa fever outbreak at a forest
-ecolodge will not be reflected in WildPath's risk tier for up to seven
-days after detection — if the model picks up the signal at all. The app
-must integrate a real-time alert layer (linked to CDC Health Notices and
-WHO DONs) that can override the map tier immediately for active outbreak
-events, independent of the weekly update cycle.
-
-**Taxonomic blind spot in biodiversity data:** Bats and rodents — the
-most important reservoir taxa for emerging zoonoses — are the groups
+**Taxonomic blind spot in biodiversity data:** Bats and rodents, which are the
+most important reservoir taxa for emerging zoonoses are the groups
 most poorly represented in IUCN and GBIF records. The model's
 biodiversity signal is strongest for the organisms least implicated in
 novel spillovers. A region may receive a lower risk score partly because
@@ -377,7 +348,7 @@ unconfirmed symptoms:** 12,000 active users is a small, non-random,
 geographically concentrated sample. Symptom reports are self-assessed,
 not clinically confirmed, and concentrated in destinations that already
 have the most formal outbreak data. This means the participatory stream
-adds the most value precisely where it is least needed (well- monitored
+adds the most value precisely where it is least needed (well-monitored
 destinations) and contributes almost nothing where it would be most
 valuable (data-sparse regions). The stream should be treated as a weak,
 supplementary signal, not a real-time surveillance substitute.
@@ -392,7 +363,7 @@ intervals and should note when they are derived from a small number of
 documented events rather than systematic ecological data.
 
 **Population-level, not individual-level, risk:** The model outputs a
-geographic risk estimate — the probability that someone in this location
+geographic risk estimate, thus, the probability that someone in this location
 at this time encounters an infectious agent. It says nothing about
 individual susceptibility. An immunocompromised traveler, a pregnant
 traveler, a traveler on immunosuppressive therapy, or a child face
@@ -422,13 +393,16 @@ clinician, epidemiologist, or national health authority reviews or
 approves individual subnational risk tier changes before they are
 published.
 
-**What currently exists:** - CDC and WHO travel advisories are
+**What currently exists:** 
+- CDC and WHO travel advisories are
 incorporated as model inputs, providing indirect expert influence on
-risk estimates — but this is ex ante influence on training, not ex post
-review of individual outputs - Premium users receive "personalized
-health briefings," implying some human-authored content — but the
+risk estimates
+— but this is ex ante influence on training, not ex post
+review of individual outputs
+- Premium users receive "personalized health briefings," implying some human-authored content but the
 credentials, clinical authority, and review process for those briefings
-are not disclosed - The app provides links to CDC and WHO advisories,
+are not disclosed
+- The app provides links to CDC and WHO advisories,
 giving users a path to authoritative human-reviewed guidance alongside
 the algorithmic output
 
@@ -438,8 +412,7 @@ the algorithmic output
 lower to a higher risk tier (e.g., Moderate → High, High → Very High)
 should require review and sign-off by a qualified epidemiologist or
 travel medicine physician before the change is published. Tier
-downgrades — which affect economic interests of destination communities
-— should be subject to the same review.
+downgrades which affect economic interests of destination communities should be subject to the same review.
 
 *Emergency override protocol:* When a WHO DON or CDC Level 2/3 advisory
 is issued for a destination currently rated Low or Moderate in WildPath,
@@ -450,8 +423,8 @@ downloaded a risk summary for that destination.
 
 *User escalation pathway:* Users who report a potential exposure event
 (animal bite, bat encounter, handling of sick wildlife) through the app
-should be immediately routed to a clinical resource — a travel medicine
-helpline, country-specific emergency contacts, or telehealth — not left
+should be immediately routed to a clinical resource a travel medicine
+helpline, country-specific emergency contacts, or telehealth not left
 with a pre-trip risk score as their only guidance. The app should not be
 the last stop in a post-exposure workflow.
 
@@ -463,10 +436,7 @@ timeframe. Human review of these submissions should be mandatory, not
 optional.
 
 *Boundaries on autonomous action:* The system currently displays
-information; it does not take action. It should not be extended to take
-autonomous action — notifying insurers, flagging users to border health
-authorities, canceling bookings — without a fundamentally different
-oversight architecture and explicit regulatory review.
+information; it does not take action.
 
 ------------------------------------------------------------------------
 
